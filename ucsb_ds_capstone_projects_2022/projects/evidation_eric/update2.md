@@ -14,7 +14,7 @@ For the Oura ring data, two sets of data were simulated. Both datasets simulated
 
 The first datasets’ simulated stress scores ranged between 0 (not stressed) and 1 (stressed). Despite trying many different models on this simulated data none of them were able to predict well. The simulated dataset used a small $beta$ and a model should not be detecting a large signal and therefore performed poorly. As we can see from the plot below the mean sleep score for participants given stress scores of 0 is not very different from participants given stress scores of 1.
 
-![](https://cdn.discordapp.com/attachments/841166503402405888/949437824371933194/Oura_Stress_Score.png)
+![image](https://cdn.discordapp.com/attachments/841166503402405888/949437824371933194/Oura_Stress_Score.png)
 
 The simulated stress scores were numeral values ranging from 140 to 280. Upon plotting the simulated stress scores and sleep scores they appeared to have a strong linear relationship. Therefore, we ran a linear regression model and the model performed very well. A plot of the data with the linear regression line is shown below. 
 
