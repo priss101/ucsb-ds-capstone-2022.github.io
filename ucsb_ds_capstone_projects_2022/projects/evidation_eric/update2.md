@@ -1,5 +1,6 @@
 # Evidation Health Project Update 2
 ## Overview 
+![](https://cdn.discordapp.com/attachments/814416594406735884/939067799014367252/unknown.png)
 Our project focuses on the Stress and Recovery of frontline healthcare workers. Using wearable, survey, and biomedical data from healthcare workers measured during the pandemic, we aim to analyze changes in sleep patterns, cognition, stress, etc. We hope that our findings will give insights into how wearable technology can help detect stress and recovery patterns. 
 
 In addition to the sample data we have been working with, we have obtained access to real data since our last project update. The sample data included only wearable data from one Garmin watch and one Oura ring worn by two different participants. The real data includes wearable data from hundreds of participants in addition to extensive survey and activity data. Participants completed ten background surveys that were collected daily, weekly, bi-weekly, etc. that measured stress, cognition, etc. These surveys will aid our ability to understand and model how wearable data can detect stress and cognition changes by serving as ground truth observations—what stress and cognition levels were actually like at that time. 
