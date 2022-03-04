@@ -8,7 +8,7 @@ In addition to the sample data we have been working with, we have obtained acces
 Since our team did not have access to the wearable data until week 8, we were tasked with simulating ground truths for the [Kaggle data](https://www.kaggle.com/) (website that contains free datasets). The goal here was to see if we could predict correlations among variables—specifically sleep and stress—and then transfer the same logic and applications onto the real data set. 
 
 ## Strategy
-Our strategy was to pick two people to simulate data, while the rest of the team tried to determine the relationship—if any—using models and other methods. We utilized linear regression and logistic regression methods to generate the ground truths. For linear regression, we used the sleep variable's $beta$ coefficient (as there was only one variable for stress) and added noise for realism. For logistic regression, we also manipulated the $\beta$ coefficient. The $\beta$ value determines how strong a relationship is between a predictor(s) and its response.
+Our strategy was to pick two people to simulate data, while the rest of the team tried to determine the relationship—if any—using models and other methods. We utilized linear regression and logistic regression methods to generate the ground truths. For linear regression, we used the sleep variable's [\beta] coefficient (as there was only one variable for stress) and added noise for realism. For logistic regression, we also manipulated the [\beta] coefficient. The [\beta$] value determines how strong a relationship is between a predictor(s) and its response.
 
 For the Oura ring data, two sets of data were simulated. Both datasets simulated fake stress scores based off of the real sleep scores from the oura ring. 
 
@@ -28,7 +28,9 @@ To perform a multiple imputation, we utilized the miceforest package on Python w
 
 After completing the imputation, we ran a linear regression model and also generated fake stress scores and compared it to our linear regression model which used data that was not imputed. We observed that the multiple imputation data had higher mean squared error and mean absolute error for predicting totalSleepHours. However, there was lower mean squared error and mean absolute error, compared to the non imputation data, when it came to predicting stress_scores. This may be because the more data that is available the more accurate the predictions of the stress_scores are. To visualize the differences in the multiple imputation (left) vs. no imputations (right) we created 3D graphs down below. 
 
-![](https://ibb.co/q0HbzDP) | ![](https://ibb.co/xL18FKR)
+Multiple Imputation             |  No Imputation
+:-------------------------:|:-------------------------:
+![](https://ibb.co/q0HbzDP)  |  ![](https://ibb.co/xL18FKR)
 
 ![](https://ibb.co/x5tzvnw) | ![](https://ibb.co/G5dN9Fv)
 
@@ -41,6 +43,8 @@ It is evident that the majority of the participants are between the ages of 20 y
 
 We also wanted to explore the Ethnicity alongside the Race of the participants in the study. The Ethnicity of the participants in the dataset broke down into the following categories: Not Hispanic or Latino, Hispanic or Lation, and Unknown/Not Reported. The Race of participants broke down into the following categories: White, More than One Race, Black or African American, Asian/Pacific Islander, Native American or American Indian, and Unknown/Not Reported. The following graphs are the results of our exploration of the Ethnicities (left) and Races (right) of participants:
 
+Ethnicities             |  Race
+:-------------------------:|:-------------------------:
 ![](https://ibb.co/x86xfZB) | ![](https://ibb.co/FbbkQfr)
 
 For ethnicity, it is evident that the majority of the participants were Not Hispanic or Latino with Hispanic or Latino participants being less than 50. 
@@ -56,7 +60,7 @@ In order to take our exploration a step further, we decided to look at one avail
 
 ![](https://ibb.co/zf3zZbP)
 
-It is evident that there exists a lot of variation between the participants as to who is stressed and who is not and whether they are stressed or not during the days when they work and the days when they do not. This brings us to our most important finding and the biggest difference between the real data and the Kaggle data. With the Kaggle data, our main focus was on within individual data/differences, however, with the real data our focus has shifted to across individuals data/differences.[^1],[^2] 
+It is evident that there exists a lot of variation between the participants as to who is stressed and who is not and whether they are stressed or not during the days when they work and the days when they do not. This brings us to our most important finding and the biggest difference between the real data and the Kaggle data. With the Kaggle data, our main focus was on within individual data/differences, however, with the real data our focus has shifted to across individuals data/differences.[^1] [^2] 
 ## Next Steps 
 In the future, we want to take a closer look at the relationship between stress and other variables. Our intuition leads us to believe that sleep, and possibly other variables, has a positive and moderate correlation with stress scores. As a result, we decided that we want to build predictive models that gauge whether or not some variables are significant predictors for stress levels. We believe such an investigation would be helpful for those who are interested in what factors are most relevant when it comes to stress.
 
