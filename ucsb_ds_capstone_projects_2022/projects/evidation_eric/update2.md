@@ -1,6 +1,6 @@
 # Evidation Health Project Update 2
 ## Overview 
-![](https://cdn.discordapp.com/attachments/814416594406735884/939067799014367252/unknown.png)
+
 Our project focuses on the Stress and Recovery of frontline healthcare workers. Using wearable, survey, and biomedical data from healthcare workers measured during the pandemic, we aim to analyze changes in sleep patterns, cognition, stress, etc. We hope that our findings will give insights into how wearable technology can help detect stress and recovery patterns. 
 
 In addition to the sample data we have been working with, we have obtained access to real data since our last project update. The sample data included only wearable data from one Garmin watch and one Oura ring worn by two different participants. The real data includes wearable data from hundreds of participants in addition to extensive survey and activity data. Participants completed ten background surveys that were collected daily, weekly, bi-weekly, etc. that measured stress, cognition, etc. These surveys will aid our ability to understand and model how wearable data can detect stress and cognition changes by serving as ground truth observations—what stress and cognition levels were actually like at that time. 
@@ -15,7 +15,7 @@ For the Oura ring data, two sets of data were simulated. Both datasets simulated
 
 The first datasets’ simulated stress scores ranged between 0 (not stressed) and 1 (stressed). Despite trying many different models on this simulated data none of them were able to predict well. The simulated dataset used a small $beta$ and a model should not be detecting a large signal and therefore performed poorly. As we can see from the plot below the mean sleep score for participants given stress scores of 0 is not very different from participants given stress scores of 1.
 
-![image](https://cdn.discordapp.com/attachments/841166503402405888/949437824371933194/Oura_Stress_Score.png)
+![](https://cdn.discordapp.com/attachments/841166503402405888/949437824371933194/Oura_Stress_Score.png)
 
 The simulated stress scores were numeral values ranging from 140 to 280. Upon plotting the simulated stress scores and sleep scores they appeared to have a strong linear relationship. Therefore, we ran a linear regression model and the model performed very well. A plot of the data with the linear regression line is shown below. 
 
@@ -43,7 +43,7 @@ It is evident that the majority of the participants are between the ages of 20 y
 
 We also wanted to explore the Ethnicity alongside the Race of the participants in the study. The Ethnicity of the participants in the dataset broke down into the following categories: Not Hispanic or Latino, Hispanic or Lation, and Unknown/Not Reported. The Race of participants broke down into the following categories: White, More than One Race, Black or African American, Asian/Pacific Islander, Native American or American Indian, and Unknown/Not Reported. The following graphs are the results of our exploration of the Ethnicities (top) and Races (bottom) of participants:
 
-![](https://cdn.discordapp.com/attachments/841166503402405888/949437802158895165/EthPlot.jpeg) | 
+![](https://cdn.discordapp.com/attachments/841166503402405888/949437802158895165/EthPlot.jpeg)
 
 ![](https://cdn.discordapp.com/attachments/841166503402405888/949437802368630904/RacePlot.jpeg)
 
